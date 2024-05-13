@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conference Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/submit-paper">Submit Paper</a></li>
+                <li><a href="/review-paper">Review Paper</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Submit Paper Section -->
+    <section id="submit-paper" style="display:none;">
+        <h2>Submit Paper</h2>
+        <form id="paperSubmissionForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="abstract">Abstract:</label>
+            <textarea id="abstract" name="abstract" required></textarea>
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords" name="keywords" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Review Paper Section -->
+    <section id="review-paper" style="display:none;">
+        <h2>Review Paper</h2>
+        <form id="paperReviewForm">
+            <input type="hidden" id="paperId" name="paperId">
+            <label for="score">Score:</label>
+            <input type="number" id="score" name="score" required min="1" max="5">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+    
+    <!-- All Scores Section -->
+    <section id="all-scores"style="display:none;">
+        <h2>My Submitted Papers and Scores</h2>
+        <div id="papers-list"></div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Conference Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

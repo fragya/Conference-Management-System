@@ -1,0 +1,59 @@
+form{
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+/* Temel Reset ve Font Ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+#all-scores {
+    margin-top: 20px;
+}
+
+#papers-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#papers-list div {
+    margin-bottom: 20px;
+}
+
+
+header, section, footer {
+    padding: 20px;
+}
+
+/* Başlık Stilleri */
+h1 {
+    color: #0056b3;
+}
+
+h2 {
+    color: #0066cc;
+}
+
+/* Navigasyon Menü Stilleri */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
+    padding: 5px 10px;
+}
